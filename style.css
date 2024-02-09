@@ -2,10 +2,13 @@
     height: 5px;
     margin-bottom: 15px;
 }
+.Noam {
+    align-content: center;
+    align-items: center;
+}
 
-nav a {
+n {
     display: block;
-    padding: 8px;
-    background-color: ;
-
+    position: center;
+    background-color: red;
 }

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet</title>
     <link rel="stylesheet" href="src/style.css">
-    <script type="text/javascript" src="src/script.js"></script>
+    <script src="src/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
-            <a href="#">Accueil</a>
-            <a href="#">Galerie</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav> 
     </header>
     <main>
@@ -28,14 +30,20 @@
             <p>Dans cette lutte acharnée entre les deux protagonistes, il réussit à calmer le malin.</p>
             <p>Après toute cette haine, il trouva sa lueur d'espoir, son réconfort, son soleil... LEO.</p>
             <img class="imgart1" src="img/leogb.jpg" alt="Omg Léo">
+            <img class="imgart1" src="img/love.png" alt="Omg Léo">
             <p>Ils restèrent amis pendant la durée de 4 minutes et 11 secondes, puis suite à une trahison de Leo...</p>
-            <p>Malgré des hauts et des bas, Noam a su rester fidèle à lui-même et a réussi à prouver que chaque histoire pouvait bien se terminer.</p>
+            <video width="320" height="240" controls>
+                <source src="tromp.mp4" type="video/mp4" />
+            </video>
+            <p>Leo trompe Noam avec deux magnifiques étalons, ce qui marque la fin de leur amour.</p>
+            <p>Malgré des hauts et des bas, Noam a su rester fidèle à lui-même.</p>
         </article>
         <article id="Heros">
             <p>Heureusement, notre héros veille toujours sur notre classe</p>
             <img class="imgart1" src="img/spiderm.jpg" alt="Spiderman veille toujours">
         </article>
     </main>
+    <img style="position: absolute; display: none;" class="boom-cursor" src="img/explo.gif"/>
     <footer></footer>
 </body>
 </html>
