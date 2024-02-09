@@ -5,23 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet</title>
     <link rel="stylesheet" href="src/styles.css">
-    <script type="text/javascript" src="src/script.js"></script>
+    <script src="src/script.js" defer></script>
     <link rel="icon" href="logo.ico">
 </head>
 <body>
     <header>
         <nav class="menu">
-            <a href="">Accueil</a>
-            <a href="">Galerie</a>
-            <a href="">Contact</a>
-        </nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav> 
     </header>
     <main>
-        <article class="photos">
-            <img src="img/sonia_x_noam.jpg" alt="Le premier amour de Noam">
-            <img src="img/leo_x_noam.jpg" alt="Noam a rencontré son âme soeur, Léo">
+        <article id="Noam">
+            <h1>La vie de Noam à L'Estiam</h1>
+            <p>Étant un étudiant plutôt bavard, il se lia d'amitié avec...</p>
+            <p>Noam ou "le Baka"</p>
+            <img class="imgart1" src="img/noam1.jpg" alt="Qui est Noam">
+            
+            <p>Sonya, son premier amour dans la classe...</p>
+            <img class="imgart1_1" src="img/sonia_x_noam -sonia.jpg" alt="Le premier amour de Noam">
+            <img id="split" class="imgart1_1" src="img/sonia_x_noam -noam.jpg" alt="Le premier amour de Noam">
+            
+            <p>Avec qui l'amour disparaîtra si rapidement après le début, mais il attira les flammes de son pire ennemi...</p>
+            <img class="imgart1" src="img/antoine.jpg" alt="L'antagoniste">
+
+            <p>Après son BAC PRO harceleur pro, Antoine prit pour cible le pauvre Noam.</p>
+            <p>Dans cette lutte acharnée entre les deux protagonistes, il réussit à calmer le malin.</p>
+            <p>Après toute cette haine, il trouva sa lueur d'espoir, son réconfort, son soleil... LEO.</p>
+            <img class="imgart1" src="img/leogb.jpg" alt="Omg Léo">
+
+            <p>L'amour fut si fort si vite...</p>
+            <img class="imgart1" src="img/love.png" alt="Omg Léo">
+
+            <p>Ils restèrent amis pendant la durée de 4 minutes et 11 secondes, puis suite à une trahison de Leo...</p>
+            
+            <video width="320" height=auto controls>
+                <source src="img/tromp.mp4" type="video/mp4" />
+            </video>
+
+            <p>Leo trompa Noam avec deux magnifiques étalons, ce qui marque la fin de leur amour.</p>
+            <p>Malgré des hauts et des bas, Noam a su rester fidèle à lui-même.</p>
+            <p>plus sur que jamais avec le soutien de toute la classe</p>
+            <img class="imgart1" src="img/noam.jpg" alt="Qui est Noam">
+
+        </article>
+        <article id="Heros">
+            <p>Heureusement, notre héros veille toujours sur notre classe</p>
+            <img class="imgart1" src="img/spiderm.jpg" alt="Spiderman veille toujours">
+            <p>Son identité reste secrète.</p>
         </article>
     </main>
-    <footer></footer>
+    <img style="position: absolute; display: none;" class="boom-cursor" src="img/explo.gif"/>
+    <footer>
+        <p>Notre école:</p>
+        <img class="imagfoot" src="img/estiam.jpg" alt="estiam">
+    </footer>
 </body>
 </html>
