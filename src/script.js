@@ -1,4 +1,17 @@
-// Script here
+document.getElementById('openModalBtn').addEventListener('mousedown', function() {
+    document.getElementById('myModal').style.display = 'block';
+});
+
+document.getElementById('closeModalBtn').addEventListener('mousedown', function() {
+    document.getElementById('myModal').style.display = 'none';
+});
+
+window.addEventListener('mousedown', function(event) {
+    if (event.target === document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = 'none';
+    }
+});
+
 const boomCursor = document.getElementsByClassName('boom-cursor').item(0);
 let splitMargin = 1;
 
