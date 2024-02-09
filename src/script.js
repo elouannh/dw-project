@@ -12,6 +12,22 @@ window.addEventListener('mousedown', function(event) {
     }
 });
 
+document.getElementById('darkModeBtn').addEventListener('mousedown', function(event) {
+    var elements = document.querySelectorAll('*');
+
+    elements.forEach(function(element) {
+        if (element.classList.contains('menu-element')) return;
+        
+        if (window.getComputedStyle(element).backgroundColor === 'rgb(218, 229, 238)') {
+            element.style.backgroundColor = 'var(--dark)';
+            element.style.color = 'var(--white)';
+        } else if (window.getComputedStyle(element).backgroundColor === 'rgb(18, 29, 38)') {
+            element.style.backgroundColor = 'var(--white)';
+            element.style.color = 'var(--dark)';
+        }
+    });
+});
+
 const boomCursor = document.getElementsByClassName('boom-cursor').item(0);
 let splitMargin = 1;
 

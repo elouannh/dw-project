@@ -1,15 +1,22 @@
-body {
-    background-color: rgb(218, 229, 238);
+:root {
+  --white: rgb(218, 229, 238);
+  --dark: rgb(18, 29, 38);
+  --dark-hover: rgb(8, 19, 28);
 }
+
+body {
+    background-color: var(--white);
+}
+
 .imgart1 {
     height: 500px;
     margin-bottom: 15px;
     border-radius: 2%;
 }
+
 .imgart1_1 {
     height: 500px;
     margin-bottom: 15px;
-
 }
 
 ul {
@@ -17,20 +24,21 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--dark);
   }
   li {
     float: left;
+    color: var(--white);
   }
   li a {
     display: block;
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   li a:hover {
-    background-color: #111;
+    background-color: var(--dark-hover);
   }
 
 
@@ -45,7 +53,7 @@ ul {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: var(--white);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -61,5 +69,5 @@ ul {
 }
 
 .close:hover {
-    color: black;
+    color: var(--dark);
 }
