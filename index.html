@@ -10,15 +10,26 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="menu menu-element">
+            <ul class="menu-element">
+                <li class="menu-element"><a class="menu-element" href="#">Accueil</a></li>
+                <li class="menu-element"><a class="menu-element" href="#">Galerie</a></li>
+                <li class="menu-element"><a class="menu-element" href="#">Contact</a></li>
             </ul>
         </nav> 
     </header>
     <main>
+        <div id="modal-section">
+            <button id="openModalBtn">Devenir millionnaire ?</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModalBtn">&times;</span>
+                    <p>Big ratio !</p>
+                </div>
+            </div>
+        </div>
+        <button id="darkModeBtn">Dark Mode</button>
         <article id="Noam">
             <h1>La vie de Noam à L'Estiam</h1>
             <p>Étant un étudiant plutôt bavard, il se lia d'amitié avec...</p>
